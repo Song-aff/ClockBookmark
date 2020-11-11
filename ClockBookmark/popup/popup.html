@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <!-- <a class="manage" href="chrome://bookmarks/">管理</a> -->
+    <!-- 
+        //管理 反馈
+        $('.manage,.fankui').click(function(){
+            chrome.tabs.create({url: $(this).attr('href')});
+        });
+     -->
+    <div id="bookmark">
+        <div id="bookmark-hd">
+            <i id='bookmark-hd-home'></i>
+            <ul id="bookmark-hd-nav">
+            </ul>
+            <i id='bookmark-hd-search'></i>
+            <input type="text" disabled />
+        </div>
+        <ul id="bookmark-bd">
+        </ul>
+        <button>书签管理</button>
+    </div>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
