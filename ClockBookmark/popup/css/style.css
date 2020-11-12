@@ -56,6 +56,12 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+#bookmark-hd i {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
 #bookmark-hd #bookmark-hd-home {
   background: url(../../images/home.png) no-repeat center;
 }
@@ -72,6 +78,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   flex: 1;
+  max-width: 240px;
   height: 30px;
 }
 

@@ -90,6 +90,7 @@ class clockBookmark {
   initNav() {
     let display = "block";
     let listTmep = "";
+    let navTmep = "";
     let input = document.querySelector("#bookmark-hd input");
     let button = document.querySelector("#bookmark button");
     let inputEvent = (e) => {
@@ -135,6 +136,7 @@ class clockBookmark {
           input.focus();
           input.addEventListener("input", inputEvent);
           listTmep = this.bookmarkBd.innerHTML;
+          navTmep = this.bookmarkNav.innerHTML;
           this.bookmarkBd.innerHTML = "";
           display = "none";
         } else {
@@ -144,7 +146,9 @@ class clockBookmark {
           display = "block";
           input.disabled = true;
           this.bookmarkBd.innerHTML = listTmep;
+          this.bookmarkNav.innerHTML = navTmep;
           listTmep = "";
+          navTmep = "";
         }
       });
     button.addEventListener("click", () => {
