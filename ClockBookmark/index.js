@@ -103,8 +103,8 @@ class clockBookmark {
       this.bookmarkBd.innerHTML = Object.keys(this.hashBookmarks)
         .filter(
           (i) =>
-            new RegExp(str).test(this.hashBookmarks[i].title) ||
-            new RegExp(str).test(this.hashBookmarks[i].url)
+            new RegExp(str, "i").test(this.hashBookmarks[i].title) ||
+            new RegExp(str, "i").test(this.hashBookmarks[i].url)
         )
         .map((id) => {
           let el = this.hashBookmarks[id];
